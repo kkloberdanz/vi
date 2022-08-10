@@ -236,7 +236,7 @@ MALLOC=mapmalloc.o
 #WARN	= -Wall -Wno-parentheses -Werror
 
 CC=clang
-CFLAGS=-Oz -ffunction-sections -fdata-sections -Wl,--gc-sections -s -fno-unwind-tables -fno-asynchronous-unwind-tables -fomit-frame-pointer -fno-stack-protector -fno-unroll-loops -fno-unroll-loops -fmerge-all-constants -fno-ident -ffast-math -fno-math-errno
+CFLAGS=-std=gnu89 -Oz -ffunction-sections -fdata-sections -Wl,--gc-sections -s -fno-unwind-tables -fno-asynchronous-unwind-tables -fomit-frame-pointer -fno-stack-protector -fno-unroll-loops -fno-unroll-loops -fmerge-all-constants -fno-ident -ffast-math -fno-math-errno
 STRIP = -s
 RECOVER	= -DEXRECOVER=\"$(LIBEXECDIR)/exrecover\" \
 			-DEXPRESERVE=\"$(LIBEXECDIR)/expreserve\"

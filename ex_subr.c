@@ -71,6 +71,8 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <sys/ioctl.h>
+
 #ifndef	lint
 #ifdef	DOSCCS
 static char sccsid[] = "@(#)ex_subr.c	1.37 (gritter) 2/15/05";

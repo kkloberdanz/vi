@@ -79,6 +79,8 @@ static char sccsid[] = "@(#)ex_tty.c	1.29 (gritter) 2/17/05";
 
 /* from ex_tty.c	7.10.1 (2.11BSD GTE) 12/9/94 */
 
+#include <sys/ioctl.h>
+
 #include "ex.h"
 #include "ex_tty.h"
 
